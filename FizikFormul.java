@@ -88,11 +88,23 @@ public class FizikFormul {
         double height = input.nextDouble();
 
         // HESAPLAMALARI YAP - Metotlari cagir
+
         // 1. Hiz (v) hesaplanmali (KE ve Momentum icin gerekli)
+        double velocity = distance / time;
         // 2. Ivme (a) hesaplanmali (Kuvvet icin gerekli)
+        double acceleration = deltaV / time;
         // 3. Kuvvet (F) hesaplanmali (Is icin gerekli)
+        double force = mass *acceleration;
         // 4. Is (W) hesaplanmali (Guc icin gerekli)
-        // ... digerlerini hesaplayin
+        double work = force * distance;
+        // 5. Guc (P) hesaplanmali
+        double power = work / time;
+        // 6. Kinetic Enerji (KE) hesaplanmali
+        double kineticEnergy = 0.5 * mass * Math.pow(velocity, 2);
+        // 7. Potansiyel Enerji (PE) hesaplanmali
+        double potentialEnergy = mass * GRAVITY * height;
+        // 8. Momentum (p) hesaplanmali
+        double momentum = mass * velocity;
   
 
 

@@ -146,8 +146,8 @@ public class GeometriHesap {
         
         System.out.printf("\nUCGEN (taban: %.1f, yukseklik: %.1f cm):\n", base, height);
         // Alan ve cevre yazdir
-        System.out.printf("   Alan    : %.1f \n", triangleArea);
-        System.out.printf("   Cevre   : %.1f \n", trianglePerimeter);
+        System.out.printf("   Alan    : %.1f cm²\n", triangleArea);
+        System.out.printf("   Cevre   : %.1f cm\n", trianglePerimeter);
         
         System.out.println("========================================");
         
